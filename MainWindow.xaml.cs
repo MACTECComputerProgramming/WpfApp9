@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WpfApp9
 {
@@ -24,6 +13,10 @@ namespace WpfApp9
         {
             InitializeComponent();
         }
+
+        // Where picture is from  https://www.pexels.com/
+
+            // Instantiate Variables
 
         public DateTime myFirstDate, mySecondDate;
 
@@ -40,7 +33,7 @@ namespace WpfApp9
 
         }
 
-
+        // Get Second Date
         public void secondCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
             secondlabel.Content = secondCalendar.SelectedDate.ToString();
@@ -56,7 +49,7 @@ namespace WpfApp9
         }
 
 
-
+        // Button Click - Result Label and call blackout method
 
         private void resultButton_Click(object sender, RoutedEventArgs e)
         {
@@ -73,6 +66,7 @@ namespace WpfApp9
 
         }
 
+        // Black out method
 
         private void SetBlackOutDates(DateTime startDate, DateTime endDate)
         {

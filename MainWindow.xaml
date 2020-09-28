@@ -8,13 +8,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-       
+
+
+        <Image x:Name="image" HorizontalAlignment="Left" Height="603" Margin="-10,1,0,0" VerticalAlignment="Top" Width="947" Source="pexels-david-bartus-1545345.jpg" Opacity="0.4" Visibility="Visible"/>
+
+
 
         <Calendar x:Name="firstCalendar" HorizontalAlignment="Left" Margin="24,122,0,0" 
                   VerticalAlignment="Top" 
                   SelectionMode="SingleDate"
                   SelectedDatesChanged="firstCalendar_SelectedDatesChanged" >
-            
+
             <Calendar.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFE4EAF0"/>
@@ -38,12 +42,14 @@
             </Calendar.Background>
         </Calendar>
         <Button x:Name="resultButton" Content="OK" HorizontalAlignment="Left" Margin="78,356,0,0" VerticalAlignment="Top" FontSize="16" Click="resultButton_Click"/>
-        <Label x:Name="resultLabel" Content="Label" HorizontalAlignment="Left" Margin="343,359,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label x:Name="firstlabel" Content="My Date" HorizontalAlignment="Left" Margin="86,306,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="secondlabel" Content="My Date" HorizontalAlignment="Left" Margin="293,303,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="resultLabel" Content="Label" HorizontalAlignment="Left" Margin="343,359,0,0" VerticalAlignment="Top" FontSize="20" FontStyle="Italic"/>
+        <Label x:Name="firstlabel" Content="My 1st Date" HorizontalAlignment="Left" Margin="86,306,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="secondlabel" Content="My 2nd Date" HorizontalAlignment="Left" Margin="293,303,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Calendar x:Name="lastCalendar" HorizontalAlignment="Left" Margin="518,127,0,0"
                   VerticalAlignment="Top" 
                   Background="#FFEEFF00"/>
+        <Label x:Name="headerlabel" Content="Number of Days Between" HorizontalAlignment="Left" Margin="119,61,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Black Out days" HorizontalAlignment="Left" Margin="532,84,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
 
     </Grid>
 </Window>
